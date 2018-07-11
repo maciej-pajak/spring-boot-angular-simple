@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Hero } from './hero';
-import { HEROES } from './mock-heroes';
 import { MessageService } from './message.service';
 
 import { Observable, of } from 'rxjs';
@@ -19,7 +18,7 @@ const httpOptions = {
 })
 export class HeroService {
 
-  private heroesUrl = 'api/heroes';  // URL to web api
+  private heroesUrl = 'http://localhost:8080/api/heroes';  // URL to web api
 
 
 
