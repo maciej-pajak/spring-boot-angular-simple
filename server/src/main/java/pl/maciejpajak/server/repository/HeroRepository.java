@@ -11,5 +11,6 @@ public interface HeroRepository extends CrudRepository<Hero, Long> {
 
     List<Hero> findAll();
     void deleteById(long id);
+    List<Hero> findByNameContainingIgnoreCase(String query);
 
 }
