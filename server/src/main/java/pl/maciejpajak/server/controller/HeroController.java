@@ -1,7 +1,6 @@
 package pl.maciejpajak.server.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 import pl.maciejpajak.server.model.Hero;
 import pl.maciejpajak.server.repository.HeroRepository;
