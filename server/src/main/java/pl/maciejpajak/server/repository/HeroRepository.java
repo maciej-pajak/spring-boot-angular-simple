@@ -10,5 +10,6 @@ import java.util.List;
 public interface HeroRepository extends CrudRepository<Hero, Long> {
 
     List<Hero> findAll();
+    void deleteById(long id);
 
 }

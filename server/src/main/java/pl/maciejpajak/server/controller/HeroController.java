@@ -24,18 +24,18 @@ public class HeroController {
     }
 
     @PostMapping
-    public Hero createHero(Hero hero) {
+    public Hero createHero(@RequestBody Hero hero) {
         return heroRepository.save(hero);
     }
 
     @PutMapping
-    public Hero updateHero(Hero hero) {
+    public Hero updateHero(@RequestBody Hero hero) {
         return heroRepository.save(hero);
     }
 
-    @DeleteMapping
-    public void deleteHero(Hero hero) {
-        heroRepository.delete(hero);
+    @DeleteMapping("/{id}")
+    public void deleteHero(@PathVariable("id") Long id) {
+        heroRepository.deleteById(id);
     }
 
 
